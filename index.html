@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #fa4b1c;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container{
+            margin: 35px 0 0 35px;
+        }
+        h2{
+            font-size: 28px;
+        }
+        input{
+            width: 200px;
+            height: 34px;
+            border: 2px solid white;
+            background-color: #fa4b1c;
+            border-radius: 8px;
+            color: white;
+            outline: none;
+            padding: 10px;
+            font-size: 14px;
+        }
+        input::placeholder{
+            color: white;
+        }
+        button{
+            margin-top: 15px;
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px 12px 10px 12px;
+            color: white;
+            background-color: #fa4b1c;
+            font-size: 15px;
+            outline: none;
+        }
+        button:hover{
+            background-color: rgb(218, 25, 25);
+            color: white;
+        }
+        .fourth{
+            margin-top: 12px;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <h2>SPHERE CALCULATION APP</h2>
+        </div>
+        
+        <div class="second">
+            <input type="number" id="my-input" placeholder="Enter a radius value">
+        </div>
+
+        <div class="third">
+            <button onclick="solve()">
+                Calculate
+            </button>
+        </div>
+
+        <div class="fourth" id="area"></div>
+
+        <div class="fourth" style="font-family: cursive;" id="volume"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
